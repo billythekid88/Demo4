@@ -4,22 +4,10 @@
     <meta charset="UTF-8">
     <title>Flask Example</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #1a1a1a; /* Darker background color */
-            color: #ffffff; /* Set text color to white for better contrast */
-        }
-        .navbar-custom {
-            background-color: #ff8c00; /* Orange tint for navbar */
-        }
-        .navbar-custom .nav-link {
-            color: #ffffff; /* Set nav link color to white */
-        }
-    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-custom">
-    <a class="navbar-brand" href="#">Pet Shop</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FlaskApp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,19 +17,10 @@
                 <a class="nav-link" href="{{ url_for('index') }}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('training') }}">Training</a>
+                <a class="nav-link" href="{{ url_for('runners.runner') }}">Runner</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('toys') }}">Toys</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('beds') }}">Beds</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('food') }}">Food</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('adopt') }}">Adopt</a>
+                <a class="nav-link" href="{{ url_for('about') }}">About</a>
             </li>
         </ul>
     </div>
